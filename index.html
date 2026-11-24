@@ -1,103 +1,1525 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Professional portfolio of Joseph Thiongo Kangethe — ICT professional, computer science graduate, technology consultant and entrepreneur in Kenya.">
-<title>Joseph Thiongo Kangethe | ICT & Technology Professional</title>
+<meta name="theme-color" content="#080d20">
+<meta name="description" content="Joseph Thiongo Kangethe - Computer Scientist, ICT Professional, Software Developer and Founder of Reliable Perfect ICT Solutions.">
+<meta name="keywords" content="Joseph Thiongo Kangethe, Computer Scientist Kenya, ICT Officer, Software Developer, IT Support, Networking, Reliable Perfect ICT Solutions">
+<meta name="author" content="Joseph Thiongo Kangethe">
+
+<title>Joseph Thiongo Kangethe | Computer Scientist & ICT Professional</title>
+
 <style>
-:root{--navy:#10233f;--blue:#1769aa;--cyan:#19a7ce;--ink:#1d2939;--muted:#667085;--bg:#f5f8fc;--white:#fff;--line:#e4eaf2}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.65}
-a{color:inherit}.wrap{width:min(1100px,92%);margin:auto}
-header{background:var(--navy);color:#fff;padding:18px 0;position:sticky;top:0;z-index:10}
-nav{display:flex;justify-content:space-between;align-items:center;gap:18px}.brand{font-weight:800;letter-spacing:.2px}.navlinks{display:flex;gap:20px;flex-wrap:wrap}.navlinks a{text-decoration:none;color:#dce8f6;font-size:.92rem}
-.hero{background:linear-gradient(125deg,#10233f,#164e7b 70%,#117c9c);color:white;padding:82px 0 76px}
-.eyebrow{color:#8de4f2;text-transform:uppercase;font-weight:700;letter-spacing:2px;font-size:.78rem}
-h1{font-size:clamp(2.2rem,6vw,4.2rem);line-height:1.08;margin:14px 0}.hero p{font-size:1.15rem;color:#e4eef8;max-width:720px}
-.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.btn{display:inline-block;padding:12px 19px;border-radius:9px;text-decoration:none;font-weight:700}.primary{background:#fff;color:var(--navy)}.secondary{border:1px solid #b8d8ee;color:#fff}
-section{padding:58px 0}.section-title{font-size:1.85rem;color:var(--navy);margin:0 0 8px}.intro{color:var(--muted);max-width:760px;margin:0 0 28px}
-.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:white;border:1px solid var(--line);border-radius:15px;padding:22px;box-shadow:0 5px 20px rgba(16,35,63,.04)}
-.card h3{margin:0 0 8px;color:var(--navy)}.card p{margin:0;color:var(--muted)}.tag{display:inline-block;background:#eaf5fb;color:#145b83;padding:4px 9px;border-radius:20px;font-size:.78rem;margin:5px 4px 0 0}
-.two{display:grid;grid-template-columns:1.1fr .9fr;gap:22px}.timeline{border-left:3px solid #c8e3f1;padding-left:20px}.item{position:relative;margin:0 0 24px}.item:before{content:"";position:absolute;left:-27px;top:8px;width:11px;height:11px;border-radius:50%;background:var(--cyan)}.item h3{margin:0;color:var(--navy)}.meta{font-size:.9rem;color:var(--muted);margin:2px 0 7px}
-ul{padding-left:20px}li{margin:6px 0}.project{display:flex;flex-direction:column;min-height:220px}.project .tags{margin-top:auto;padding-top:14px}
-.contact{background:var(--navy);color:#fff}.contact .section-title{color:#fff}.contact .intro{color:#d2deeb}.contact a{color:#9ce8f2}
-footer{padding:22px 0;text-align:center;color:#778397;font-size:.9rem}
-@media(max-width:760px){.grid{grid-template-columns:1fr}.two{grid-template-columns:1fr}.navlinks{gap:10px}.navlinks a{font-size:.8rem}.hero{padding:60px 0}}
-@media print{header{position:static}.actions{display:none}body{background:white}.card{break-inside:avoid}}
+:root {
+  --bg: #080d20;
+  --surface: #111a32;
+  --surface2: #17233f;
+  --white: #f7f9ff;
+  --muted: #aab7d1;
+  --cyan: #36d9ef;
+  --blue: #5687ff;
+  --purple: #a77bff;
+  --pink: #ff6eb4;
+  --green: #48d9a1;
+  --gold: #ffc66d;
+  --border: rgba(255,255,255,.11);
+  --gradient: linear-gradient(120deg,#36d9ef,#5687ff,#a77bff,#ff6eb4);
+  --radius: 20px;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; scroll-padding-top: 90px; }
+
+body {
+  font-family: Inter, "Segoe UI", Arial, sans-serif;
+  background: var(--bg);
+  color: var(--white);
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+a { color: inherit; text-decoration: none; }
+
+button, input, textarea, select { font: inherit; }
+
+button, a { -webkit-tap-highlight-color: transparent; }
+
+img { max-width: 100%; display: block; }
+
+.container {
+  width: min(1160px, 91%);
+  margin: auto;
+}
+
+section { padding: 90px 0; }
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.section-heading .eyebrow {
+  color: var(--cyan);
+  font-size: .8rem;
+  letter-spacing: 3px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.section-heading h2 {
+  font-size: clamp(2rem,5vw,3rem);
+  margin: 10px 0;
+  line-height: 1.2;
+}
+
+.section-heading p {
+  color: var(--muted);
+  max-width: 650px;
+  margin: auto;
+}
+
+.gradient-text {
+  background: var(--gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding: 13px 22px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  transition: .25s;
+  background: rgba(255,255,255,.05);
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  border-color: var(--cyan);
+}
+
+.btn-primary {
+  background: var(--gradient);
+  color: #071021;
+  border: none;
+}
+
+.btn-primary:hover { box-shadow: 0 8px 30px #5687ff55; }
+
+.btn-whatsapp {
+  background: #128c60;
+  border-color: #128c60;
+}
+
+.card {
+  background: linear-gradient(145deg,rgba(255,255,255,.065),rgba(255,255,255,.018));
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 25px;
+  transition: .3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  border-color: #5687ff88;
+  box-shadow: 0 15px 40px #0003;
+}
+
+.tag {
+  display: inline-block;
+  background: #5687ff1c;
+  color: var(--cyan);
+  padding: 5px 12px;
+  border-radius: 30px;
+  font-size: .77rem;
+  margin: 4px 3px;
+  border: 1px solid #5687ff44;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(8,13,32,.94);
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--border);
+}
+
+.navbar {
+  min-height: 76px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.logo {
+  font-size: 1.12rem;
+  font-weight: 900;
+  letter-spacing: -.5px;
+}
+
+.logo span { color: var(--cyan); }
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 19px;
+  list-style: none;
+}
+
+.nav-links a {
+  color: var(--muted);
+  font-size: .85rem;
+  font-weight: 650;
+  transition: .2s;
+}
+
+.nav-links a:hover, .nav-links a.active { color: var(--cyan); }
+
+.dropdown { position: relative; }
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 210px;
+  padding: 12px;
+  background: #121d38;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  box-shadow: 0 15px 40px #0006;
+}
+
+.dropdown:hover .dropdown-menu,
+.dropdown:focus-within .dropdown-menu { display: block; }
+
+.dropdown-menu a {
+  display: block;
+  padding: 9px;
+  border-radius: 8px;
+}
+
+.dropdown-menu a:hover { background: #ffffff12; }
+
+.menu-toggle {
+  display: none;
+  background: none;
+  color: white;
+  border: 1px solid var(--border);
+  padding: 8px 13px;
+  border-radius: 10px;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+/* HERO */
+
+.hero {
+  min-height: 690px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  padding: 100px 0;
+  background:
+    radial-gradient(ellipse at 10% 20%,#5687ff20,transparent 40%),
+    radial-gradient(ellipse at 90% 70%,#a77bff1c,transparent 40%);
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.35fr .85fr;
+  align-items: center;
+  gap: 55px;
+}
+
+.availability {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 8px 14px;
+  border-radius: 30px;
+  background: #48d9a115;
+  color: var(--green);
+  border: 1px solid #48d9a144;
+  font-size: .8rem;
+  margin-bottom: 22px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  background: var(--green);
+  border-radius: 50%;
+  box-shadow: 0 0 12px var(--green);
+}
+
+.hero h1 {
+  font-size: clamp(2.7rem,6vw,4.8rem);
+  line-height: 1.1;
+  letter-spacing: -2px;
+  margin-bottom: 18px;
+}
+
+.hero h2 {
+  font-size: clamp(1.1rem,2.5vw,1.55rem);
+  color: var(--cyan);
+  margin-bottom: 18px;
+}
+
+.hero p {
+  color: var(--muted);
+  max-width: 650px;
+  margin-bottom: 27px;
+}
+
+.hero-buttons { display: flex; gap: 12px; flex-wrap: wrap; }
+
+.profile-frame {
+  width: min(340px,100%);
+  aspect-ratio: 1;
+  margin: auto;
+  border-radius: 35%;
+  padding: 7px;
+  background: var(--gradient);
+  transform: rotate(3deg);
+  box-shadow: 0 20px 80px #5687ff30;
+}
+
+.profile-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 34%;
+  background: var(--surface);
+  transform: rotate(-3deg);
+}
+
+.profile-fallback {
+  width: 100%;
+  height: 100%;
+  border-radius: 34%;
+  display: grid;
+  place-items: center;
+  font-size: 6rem;
+  font-weight: 900;
+  color: white;
+  background: linear-gradient(145deg,#18294c,#49336c);
+  transform: rotate(-3deg);
+}
+
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 25px;
+}
+
+.social-links a {
+  border: 1px solid var(--border);
+  border-radius: 9px;
+  padding: 8px 13px;
+  font-size: .85rem;
+  color: var(--muted);
+}
+
+.social-links a:hover { color: var(--cyan); border-color: var(--cyan); }
+
+/* STATS */
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 15px;
+  margin-top: -35px;
+  position: relative;
+  z-index: 2;
+}
+
+.stat {
+  text-align: center;
+  background: var(--surface);
+  padding: 22px 10px;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+}
+
+.stat strong {
+  display: block;
+  font-size: 1.8rem;
+  color: var(--cyan);
+}
+
+.stat span { color: var(--muted); font-size: .82rem; }
+
+/* ABOUT */
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1.15fr .85fr;
+  gap: 25px;
+}
+
+.about-copy p { color: var(--muted); margin: 15px 0; }
+
+.info-list { list-style: none; margin-top: 20px; }
+
+.info-list li {
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border);
+  color: var(--muted);
+}
+
+.info-list strong { color: white; }
+
+/* SKILLS */
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 18px;
+}
+
+.skill-icon {
+  font-size: 2rem;
+  margin-bottom: 12px;
+}
+
+.skill-card h3 { margin-bottom: 10px; }
+
+.skill-card p { color: var(--muted); font-size: .9rem; }
+
+/* EXPERIENCE */
+
+.timeline {
+  max-width: 850px;
+  margin: auto;
+  border-left: 2px solid #5687ff66;
+  padding-left: 30px;
+}
+
+.timeline-item { position: relative; margin-bottom: 25px; }
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -38px;
+  top: 28px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: var(--cyan);
+  box-shadow: 0 0 15px var(--cyan);
+}
+
+.timeline-item h3 { color: var(--cyan); }
+
+.timeline-item .period { color: var(--purple); font-size: .84rem; }
+
+.timeline-item p, .timeline-item li { color: var(--muted); font-size: .92rem; }
+
+.timeline-item ul { padding-left: 20px; margin-top: 12px; }
+
+/* PROJECTS */
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 20px;
+}
+
+.project-card h3 { margin: 12px 0; }
+
+.project-card p { color: var(--muted); font-size: .9rem; }
+
+.project-label {
+  color: var(--purple);
+  font-size: .78rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* BUSINESS */
+
+.business-banner {
+  background:
+    radial-gradient(circle at 90% 10%,#ff6eb42b,transparent 40%),
+    linear-gradient(125deg,#14254b,#261a4d);
+  border: 1px solid #a77bff66;
+  border-radius: 28px;
+  padding: clamp(25px,5vw,55px);
+  text-align: center;
+}
+
+.business-banner h3 {
+  font-size: clamp(1.8rem,4vw,3rem);
+  margin: 12px 0;
+}
+
+.business-banner p {
+  max-width: 700px;
+  margin: 0 auto 22px;
+  color: var(--muted);
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 18px;
+  margin-top: 35px;
+}
+
+.service-card h3 { margin: 10px 0; }
+
+.service-card p { color: var(--muted); font-size: .9rem; }
+
+.service-card .service-icon { font-size: 2.2rem; }
+
+.price-note {
+  font-size: .77rem;
+  color: var(--gold);
+  margin-top: 12px;
+}
+
+/* PROCESS */
+
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 15px;
+}
+
+.process-step { text-align: center; }
+
+.process-step strong {
+  width: 45px;
+  height: 45px;
+  display: grid;
+  place-items: center;
+  background: var(--gradient);
+  color: #081021;
+  border-radius: 50%;
+  margin: 0 auto 13px;
+}
+
+.process-step p { color: var(--muted); font-size: .85rem; }
+
+/* CONTACT */
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: .85fr 1.15fr;
+  gap: 22px;
+}
+
+.contact-info p { color: var(--muted); margin: 12px 0; }
+
+.contact-link {
+  display: block;
+  padding: 13px;
+  background: #ffffff08;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  margin-top: 12px;
+  overflow-wrap: anywhere;
+}
+
+.contact-link:hover { border-color: var(--cyan); }
+
+form { display: grid; gap: 14px; }
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+label { font-size: .85rem; font-weight: 700; }
+
+input, select, textarea {
+  width: 100%;
+  margin-top: 6px;
+  background: #080f23;
+  color: white;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 13px;
+  outline: none;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: var(--cyan);
+  box-shadow: 0 0 0 3px #36d9ef15;
+}
+
+textarea { min-height: 125px; resize: vertical; }
+
+select option { background: #111a32; }
+
+/* FOOTER */
+
+footer {
+  border-top: 1px solid var(--border);
+  background: #060a17;
+  padding: 35px 0;
+  text-align: center;
+}
+
+footer p { color: var(--muted); font-size: .85rem; margin: 8px 0; }
+
+footer a { color: var(--cyan); }
+
+.whatsapp-float {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 900;
+  background: #16a66c;
+  color: white;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 1.65rem;
+  box-shadow: 0 8px 25px #0006;
+  transition: .2s;
+}
+
+.whatsapp-float:hover { transform: scale(1.1); }
+
+.back-top {
+  position: fixed;
+  right: 23px;
+  bottom: 90px;
+  z-index: 900;
+  border: none;
+  background: var(--surface2);
+  color: white;
+  padding: 10px 14px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: none;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: .7s;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* MOBILE */
+
+@media(max-width:900px) {
+  .nav-links { gap: 11px; }
+  .nav-links a { font-size: .77rem; }
+  .hero-grid { gap: 30px; }
+  .skills-grid, .services-grid { grid-template-columns: repeat(2,1fr); }
+}
+
+@media(max-width:700px) {
+  section { padding: 70px 0; }
+
+  .menu-toggle { display: block; }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 76px;
+    left: 0;
+    right: 0;
+    background: #0d1530;
+    border-bottom: 1px solid var(--border);
+    padding: 18px 5%;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    max-height: 75vh;
+    overflow-y: auto;
+  }
+
+  .nav-links.open { display: flex; }
+
+  .nav-links > li > a {
+    display: block;
+    padding: 12px;
+    font-size: .95rem;
+  }
+
+  .dropdown-menu {
+    display: block;
+    position: static;
+    box-shadow: none;
+    border: none;
+    background: #ffffff06;
+    padding-left: 20px;
+  }
+
+  .hero { padding: 65px 0 80px; }
+
+  .hero-grid { grid-template-columns: 1fr; text-align: center; }
+
+  .hero-content { order: 2; }
+  .profile-frame { order: 1; max-width: 235px; }
+
+  .hero p { margin-left: auto; margin-right: auto; }
+
+  .hero-buttons, .social-links { justify-content: center; }
+
+  .stats { grid-template-columns: repeat(2,1fr); }
+
+  .about-grid, .contact-grid { grid-template-columns: 1fr; }
+
+  .skills-grid, .services-grid { grid-template-columns: 1fr; }
+
+  .projects-grid { grid-template-columns: 1fr; }
+
+  .process-grid { grid-template-columns: repeat(2,1fr); row-gap: 25px; }
+
+  .form-row { grid-template-columns: 1fr; }
+
+  .hero h1 { letter-spacing: -1px; }
+}
+
+@media(prefers-reduced-motion:reduce) {
+  *, *::before, *::after {
+    scroll-behavior: auto !important;
+    transition-duration: .01ms !important;
+    animation-duration: .01ms !important;
+  }
+}
 </style>
 </head>
+
 <body>
-<header><div class="wrap"><nav><div class="brand">JOSEPH THIONGO K.</div><div class="navlinks"><a href="#about">About</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#contact">Contact</a></div></nav></div></header>
+
+<header>
+  <div class="container navbar">
+    <a class="logo" href="#home">JOSEPH<span>.</span>TK</a>
+
+    <button class="menu-toggle" id="menuToggle"
+      aria-label="Open navigation" aria-expanded="false">
+      ☰
+    </button>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li class="dropdown">
+        <a href="#business">My Business ▾</a>
+        <div class="dropdown-menu">
+          <a href="#services">ICT Services</a>
+          <a href="#process">How It Works</a>
+          <a href="#contact">Request a Service</a>
+        </div>
+      </li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
 <main>
-<section class="hero"><div class="wrap">
-<div class="eyebrow">ICT Professional · Computer Science Graduate · Technology Entrepreneur</div>
-<h1>Joseph Thiongo Kangethe</h1>
-<p>Practical ICT support professional and Computer Science graduate with experience supporting digital learning, troubleshooting computer systems, maintaining ICT equipment and helping users adopt technology. Interested in ICT engineering, software development, AI solutions and technology consulting.</p>
-<div class="actions"><a class="btn primary" href="#contact">Contact me</a><a class="btn secondary" href="#projects">Explore my work</a></div>
-</div></section>
 
-<section id="about"><div class="wrap">
-<h2 class="section-title">Professional Profile</h2>
-<p class="intro">I combine academic training in Computer Science with hands-on ICT support and digital literacy programme experience. My work has included school ICT support, device assessment, software installation, printer troubleshooting, basic networking, user guidance and administrative support. I am building further capability in software engineering, AI, cybersecurity and cloud technologies.</p>
-<div class="grid">
-<div class="card"><h3>ICT Support & Operations</h3><p>Computer troubleshooting, hardware and software support, printer configuration, device assessment and user assistance.</p></div>
-<div class="card"><h3>Digital Learning</h3><p>Digital literacy support, teacher guidance, ICT integration and support for digital learning equipment and content.</p></div>
-<div class="card"><h3>Technology Solutions</h3><p>Interest in practical software, automation and technology services that solve everyday organisational and business needs.</p></div>
-</div>
-</div></section>
+<!-- HOME -->
 
-<section id="skills" style="background:#edf3f9"><div class="wrap">
-<h2 class="section-title">Technical Skills</h2><p class="intro">Skills and areas of practical exposure. Proficiency should be discussed in relation to the specific role.</p>
-<div class="grid">
-<div class="card"><h3>ICT Support</h3><span class="tag">PC troubleshooting</span><span class="tag">Hardware diagnostics</span><span class="tag">Windows support</span><span class="tag">Software installation</span><span class="tag">Printer support</span><span class="tag">Preventive maintenance</span></div>
-<div class="card"><h3>Networking</h3><span class="tag">LAN fundamentals</span><span class="tag">Switches & routers</span><span class="tag">Ethernet cabling</span><span class="tag">RJ45 termination</span><span class="tag">Network troubleshooting</span></div>
-<div class="card"><h3>Development & Data</h3><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">PHP</span><span class="tag">MySQL</span><span class="tag">Python — learning focus</span></div>
-<div class="card"><h3>Digital Education</h3><span class="tag">Digital literacy training</span><span class="tag">ICT integration</span><span class="tag">Digital content support</span><span class="tag">Teacher support</span></div>
-<div class="card"><h3>Professional</h3><span class="tag">Technical reporting</span><span class="tag">Customer support</span><span class="tag">Documentation</span><span class="tag">Office administration</span><span class="tag">Communication</span></div>
-<div class="card"><h3>Developing Expertise</h3><span class="tag">Artificial intelligence</span><span class="tag">Cybersecurity</span><span class="tag">Cloud computing</span><span class="tag">Automation</span></div>
-</div>
-</div></section>
+<section class="hero" id="home">
+  <div class="container hero-grid">
 
-<section id="experience"><div class="wrap">
-<h2 class="section-title">Experience</h2><p class="intro">Selected professional experience and practical training.</p>
-<div class="two">
-<div class="timeline">
-<div class="item"><h3>DLP ICT Intern / ICT Support</h3><div class="meta">Ministry of Education / ICT Authority Digital Literacy Programme · Kenya · 2025–2026</div><ul><li>Supported digital literacy activities and ICT integration in schools.</li><li>Assisted with assessment and troubleshooting of digital learning devices, including laptops and related equipment.</li><li>Provided user support to teachers and school staff on digital learning tools and content.</li><li>Supported printer and peripheral setup, basic maintenance, documentation and field reporting.</li><li>Helped identify equipment faults and escalated issues requiring replacement or specialist repair.</li></ul></div>
-<div class="item"><h3>Cyber Cafe Operator / ICT Technician</h3><div class="meta">Self-employed · Nairobi, Kenya · January 2024 – October 2025</div><ul><li>Provided customer-facing computer, printing, scanning and general ICT services.</li><li>Performed basic computer maintenance, software installation and troubleshooting.</li><li>Assisted customers with document preparation and common digital services.</li><li>Managed daily service operations and supported customer enquiries.</li></ul></div>
-<div class="item"><h3>ICT Attachment Trainee</h3><div class="meta">Kiambu Institute of Science and Technology (KIST) · Kenya</div><ul><li>Gained practical exposure to computer hardware, installation, testing and fault diagnosis.</li><li>Supported basic networking activities, cabling, connectivity and ICT equipment setup.</li><li>Assisted with software installation, printer support, maintenance and workstation configuration.</li></ul></div>
-</div>
-<div class="card"><h3>Education</h3><div class="meta">Bachelor of Science in Computer Science</div><p><strong>Kirinyaga University</strong><br>Completed June 2023 · Graduated 13 October 2023<br>Grade: Distinction</p><hr style="border:0;border-top:1px solid var(--line);margin:20px 0"><h3>Additional Training</h3><p>Microsoft Office / professional skills short course — Redeemed Institute of Advanced Studies.</p><hr style="border:0;border-top:1px solid var(--line);margin:20px 0"><h3>Career Interests</h3><p>ICT Support & Systems Administration · Network Support · Digital Learning · Software Development · AI-enabled solutions · Technology Consulting</p></div>
-</div>
-</div></section>
+    <div class="hero-content">
+      <div class="availability">
+        <span class="dot"></span>
+        Computer Scientist | ICT Professional
+      </div>
 
-<section id="projects" style="background:#edf3f9"><div class="wrap">
-<h2 class="section-title">Projects & Practical Work</h2><p class="intro">Selected academic and practical work. Add screenshots, repositories and verified project links as they become available.</p>
-<div class="grid">
-<div class="card project"><h3>Restaurant Management System</h3><p>University project developed with an HTML, CSS and JavaScript frontend and PHP/MySQL backend. Designed to support restaurant management workflows and demonstrate full-stack development fundamentals.</p><div class="tags"><span class="tag">HTML/CSS</span><span class="tag">JavaScript</span><span class="tag">PHP</span><span class="tag">MySQL</span></div></div>
-<div class="card project"><h3>Digital Learning Device Support</h3><p>Practical DLP field exposure involving assessment of learning devices, identification of faults, basic troubleshooting, software support and reporting to relevant education stakeholders.</p><div class="tags"><span class="tag">ICT support</span><span class="tag">Troubleshooting</span><span class="tag">Digital education</span></div></div>
-<div class="card project"><h3>Printer & End-user Support</h3><p>Practical support experience diagnosing printing issues, configuring printers and assisting users with workstation and peripheral problems.</p><div class="tags"><span class="tag">Printer support</span><span class="tag">Windows</span><span class="tag">User support</span></div></div>
-</div>
-</div></section>
+      <h1>Hello, I'm <span class="gradient-text">Joseph Thiongo Kangethe</span></h1>
 
-<section><div class="wrap">
-<h2 class="section-title">What I Can Contribute</h2>
-<div class="grid">
-<div class="card"><h3>For employers</h3><p>Reliable first-line ICT support, device and peripheral troubleshooting, documentation, user assistance and willingness to learn new systems.</p></div>
-<div class="card"><h3>For schools & institutions</h3><p>Digital literacy support, ICT equipment assessment, teacher/user guidance and practical assistance with technology integration.</p></div>
-<div class="card"><h3>For clients & partners</h3><p>Customer-focused ICT services, computer maintenance support and collaboration on practical digital solutions.</p></div>
-</div>
-</div></section>
+      <h2>Computer Scientist · ICT Professional · Technology Enthusiast</h2>
 
-<section id="contact" class="contact"><div class="wrap">
-<h2 class="section-title">Let's Connect</h2>
-<p class="intro">I welcome opportunities in ICT support, digital literacy, technical operations, software development, technology consulting and collaborative projects.</p>
-<p><strong>Location:</strong> Kenya</p>
-<p><strong>Email:</strong> kangethejosephthiongo@gmail.com</p>
-<p><strong>Phone / WhatsApp:</strong> <a href="tel:+254717810924">+254 717 810 924</a> · <a href="https://wa.me/254717810924">WhatsApp</a></p>
-<p><strong>LinkedIn:</strong> Add your LinkedIn profile URL</p>
-<p><strong>GitHub:</strong> Add your GitHub profile or project repository</p>
-<p style="font-size:.9rem;color:#d2deeb">Before publishing, replace the contact placeholders with details you want recruiters and clients to use.</p>
-</div></section>
+      <p>
+        BSc Computer Science graduate from Kirinyaga University.
+        I work across ICT support, computer systems, networking,
+        software development and digital technology.
+        I am passionate about building practical technology solutions
+        and helping people and organisations use technology effectively.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#projects" class="btn btn-primary">Explore My Work ↗</a>
+        <a href="#contact" class="btn">Hire / Contact Me</a>
+        <a href="#services" class="btn">ICT Services</a>
+      </div>
+
+      <div class="social-links">
+        <a href="https://github.com/computerscientist254" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/joseph-thiongo-9951a827b/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="mailto:kangethejosephthiongo@gmail.com">Email</a>
+      </div>
+    </div>
+
+    <div class="profile-frame">
+      <!-- Upload your own photograph as assets/profile.jpg -->
+      <img src="assets/profile.jpg"
+           alt="Joseph Thiongo Kangethe"
+           onerror="this.style.display='none';this.nextElementSibling.style.display='grid';">
+      <div class="profile-fallback" style="display:none;">JK</div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CAREER HIGHLIGHTS -->
+
+<div class="container stats">
+  <div class="stat">
+    <strong>2023</strong>
+    <span>BSc Graduation</span>
+  </div>
+  <div class="stat">
+    <strong>ICT</strong>
+    <span>Professional Experience</span>
+  </div>
+  <div class="stat">
+    <strong>PHP</strong>
+    <span>Web Development</span>
+  </div>
+  <div class="stat">
+    <strong>Kenya</strong>
+    <span>Based in Nairobi Region</span>
+  </div>
+</div>
+
+<!-- ABOUT -->
+
+<section id="about">
+  <div class="container">
+    <div class="section-heading">
+      <span class="eyebrow">Discover My Background</span>
+      <h2>About <span class="gradient-text">Me</span></h2>
+      <p>My academic foundation, professional journey and technology interests.</p>
+    </div>
+
+    <div class="about-grid">
+      <div class="card about-copy">
+        <h3>Who Is Joseph?</h3>
+
+        <p>
+          I am a Computer Science graduate with a Bachelor of Science
+          degree from Kirinyaga University, Kenya, graduating with
+          Distinction in October 2023.
+        </p>
+
+        <p>
+          My professional interests include IT support, hardware
+          maintenance, network administration, software development,
+          digital literacy, information systems and technology solutions.
+        </p>
+
+        <p>
+          My practical experience includes ICT support and digital
+          literacy activities through the Ministry of Education's
+          Digital Literacy Programme, industrial attachment at
+          Kiambu Institute of Science and Technology, and
+          self-employment in cyber cafe and ICT services.
+        </p>
+
+        <p>
+          I am continuously developing my skills in software
+          engineering, cloud computing, cybersecurity and artificial
+          intelligence.
+        </p>
+
+        <a href="#contact" class="btn btn-primary">Let's Connect ↗</a>
+      </div>
+
+      <div class="card">
+        <h3>Professional Profile</h3>
+        <ul class="info-list">
+          <li><strong>Full name:</strong> Joseph Thiongo Kangethe</li>
+          <li><strong>Profession:</strong> Computer Scientist / ICT Professional</li>
+          <li><strong>Education:</strong> BSc Computer Science</li>
+          <li><strong>University:</strong> Kirinyaga University</li>
+          <li><strong>Graduation:</strong> October 2023</li>
+          <li><strong>Classification:</strong> Distinction</li>
+          <li><strong>Location:</strong> Nairobi, Kenya</li>
+          <li><strong>Languages:</strong> English, Kiswahili, Kikuyu</li>
+          <li><strong>Professional interests:</strong> Software Engineering, ICT and AI</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+
+<section id="skills" style="background:#0c142a;">
+  <div class="container">
+    <div class="section-heading">
+      <span class="eyebrow">Technical Expertise</span>
+      <h2>My <span class="gradient-text">Skills</span></h2>
+      <p>A growing technical skill set covering computer systems, programming and ICT operations.</p>
+    </div>
+
+    <div class="skills-grid">
+
+      <div class="card skill-card">
+        <div class="skill-icon">💻</div>
+        <h3>Programming & Web Development</h3>
+        <p>HTML5, CSS3, JavaScript, PHP, MySQL, responsive web design, application logic and database fundamentals.</p>
+        <span class="tag">HTML</span><span class="tag">CSS</span>
+        <span class="tag">JavaScript</span><span class="tag">PHP</span>
+        <span class="tag">MySQL</span>
+      </div>
+
+      <div class="card skill-card">
+        <div class="skill-icon">🖥️</div>
+        <h3>Computer Hardware</h3>
+        <p>Computer assembly, diagnostics, RAM, storage, motherboards, BIOS troubleshooting, component replacement and preventive maintenance.</p>
+        <span class="tag">PC Repair</span><span class="tag">BIOS</span>
+        <span class="tag">Hardware</span>
+      </div>
+
+      <div class="card skill-card">
+        <div class="skill-icon">🌐</div>
+        <h3>Networking</h3>
+        <p>LAN, MAN, WAN, routers, switches, Ethernet, CAT6 cabling, RJ45 termination, network configuration and connectivity troubleshooting.</p>
+        <span class="tag">LAN/WAN</span><span class="tag">TCP/IP</span>
+        <span class="tag">Networking</span>
+      </div>
+
+      <div class="card skill-card">
+        <div class="skill-icon">🪟</div>
+        <h3>Operating Systems</h3>
+        <p>Windows installation, configuration, software management, drivers, user accounts, system maintenance and troubleshooting.</p>
+        <span class="tag">Windows</span><span class="tag">Installation</span>
+        <span class="tag">Troubleshooting</span>
+      </div>
+
+      <div class="card skill-card">
+        <div class="skill-icon">🖨️</div>
+        <h3>Printer & Peripheral Support</h3>
+        <p>Printer installation, configuration, connectivity, printing diagnostics, scanning, projector setup and peripheral support.</p>
+        <span class="tag">HP Printers</span><span class="tag">Kyocera</span>
+        <span class="tag">Epson</span>
+      </div>
+
+      <div class="card skill-card">
+        <div class="skill-icon">🎓</div>
+        <h3>Digital Literacy & ICT Training</h3>
+        <p>ICT integration, digital content, teacher support, computer training, educational technology and responsible technology use.</p>
+        <span class="tag">DigiSchool</span><span class="tag">ICT Training</span>
+        <span class="tag">E-learning</span>
+      </div>
+
+      <div class="card skill-card">
+        <div class="skill-icon">🗄️</div>
+        <h3>Database & Information Systems</h3>
+        <p>Relational database concepts, MySQL, data entry, information management, system documentation and record management.</p>
+        <span class="tag">MySQL</span><span class="tag">PHP</span>
+        <span class="tag">Database Design</span>
+      </div>
+
+      <div class="card skill-card">
+        <div class="skill-icon">🛠️</div>
+        <h3>IT Support & Administration</h3>
+        <p>Technical support, fault diagnosis, software installation, preventive maintenance, user support and IT documentation.</p>
+        <span class="tag">IT Support</span><span class="tag">Helpdesk</span>
+        <span class="tag">Maintenance</span>
+      </div>
+
+      <div class="card skill-card">
+        <div class="skill-icon">🤖</div>
+        <h3>Emerging Technologies</h3>
+        <p>Artificial intelligence, machine learning, automation, cloud computing and modern software development concepts.</p>
+        <span class="tag">AI</span><span class="tag">Automation</span>
+        <span class="tag">Cloud Computing</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+
+<section id="experience">
+  <div class="container">
+    <div class="section-heading">
+      <span class="eyebrow">Professional Journey</span>
+      <h2>Work <span class="gradient-text">Experience</span></h2>
+      <p>Practical experience in ICT support, education technology and computer services.</p>
+    </div>
+
+    <div class="timeline">
+
+      <div class="timeline-item card">
+        <span class="period">2025 – 2026</span>
+        <h3>ICT Digital Literacy Intern / Trainer</h3>
+        <h4>Ministry of Education – Digital Literacy Programme</h4>
+        <p>ICT support and digital literacy activities within the basic education sector.</p>
+        <ul>
+          <li>Supported digital literacy and ICT integration in schools.</li>
+          <li>Assessed and troubleshot digital learning devices.</li>
+          <li>Supported teachers in using digital learning resources.</li>
+          <li>Assisted with laptop, projector and printer troubleshooting.</li>
+          <li>Supported educational technology deployment and maintenance.</li>
+          <li>Prepared technical reports and school ICT assessment information.</li>
+        </ul>
+      </div>
+
+      <div class="timeline-item card">
+        <span class="period">Industrial Attachment</span>
+        <h3>ICT Trainee / Attachee</h3>
+        <h4>Kiambu Institute of Science and Technology (KIST)</h4>
+        <p>Practical exposure to institutional ICT infrastructure and support.</p>
+        <ul>
+          <li>Computer hardware installation, testing and troubleshooting.</li>
+          <li>Networking and Ethernet cable termination.</li>
+          <li>Software installation and configuration.</li>
+          <li>Printer, server and user account support.</li>
+          <li>Computer maintenance and technical documentation.</li>
+        </ul>
+      </div>
+
+      <div class="timeline-item card">
+        <span class="period">January 2024 – October 2025</span>
+        <h3>Cyber Cafe Operator / ICT Technician</h3>
+        <h4>Self-Employed – Cyber Cafe & ICT Services</h4>
+        <p>Provided computer services, customer assistance and technical support.</p>
+        <ul>
+          <li>Computer troubleshooting and maintenance.</li>
+          <li>Software installation and operating system support.</li>
+          <li>Printing, scanning, photocopying and document services.</li>
+          <li>Customer assistance and digital services.</li>
+          <li>Basic networking and peripheral configuration.</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+
+<section id="education" style="background:#0c142a;">
+  <div class="container">
+    <div class="section-heading">
+      <span class="eyebrow">Academic Background</span>
+      <h2>Education & <span class="gradient-text">Training</span></h2>
+    </div>
+
+    <div class="projects-grid">
+      <div class="card">
+        <span class="tag">University Education</span>
+        <h3>Bachelor of Science in Computer Science</h3>
+        <p>Kirinyaga University, Kenya</p>
+        <p>August 2018 – June 2023</p>
+        <p><strong>Classification: Distinction</strong></p>
+        <p>Official graduation: 13 October 2023.</p>
+      </div>
+
+      <div class="card">
+        <span class="tag">Secondary Education</span>
+        <h3>Kenya Certificate of Secondary Education</h3>
+        <p>Kiranga High School</p>
+        <p>2013 – 2017</p>
+        <p><strong>Overall grade: C+</strong></p>
+      </div>
+
+      <div class="card">
+        <span class="tag">Professional Training</span>
+        <h3>Microsoft Office & Professional Expertise</h3>
+        <p>Redeemed Institute of Advanced Studies</p>
+        <p>Three-month short course.</p>
+      </div>
+
+    </div>
+    <p style="color:var(--muted);margin-top:20px;text-align:center;">
+      Additional professional certifications will be added as they are earned and verified.
+    </p>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+
+<section id="projects">
+  <div class="container">
+    <div class="section-heading">
+      <span class="eyebrow">Software & Innovation</span>
+      <h2>Featured <span class="gradient-text">Projects</span></h2>
+      <p>Academic and personal technology projects, with development status clearly identified.</p>
+    </div>
+
+    <div class="projects-grid">
+
+      <div class="card project-card">
+        <span class="project-label">University Final-Year Project</span>
+        <h3>Restaurant Management System</h3>
+        <p>
+          An academic software project designed to support restaurant
+          operations and information management.
+        </p>
+        <p style="margin-top:12px;">Technologies: HTML, CSS, JavaScript, PHP and MySQL.</p>
+        <span class="tag">Web Development</span>
+        <span class="tag">Database</span>
+        <p style="margin-top:12px;color:var(--gold);">Academic project</p>
+      </div>
+
+      <div class="card project-card">
+        <span class="project-label">Personal Project</span>
+        <h3>Professional Portfolio Website</h3>
+        <p>
+          A responsive professional portfolio showcasing my
+          background, technical skills, work experience and ICT services.
+        </p>
+        <span class="tag">HTML</span><span class="tag">CSS</span>
+        <span class="tag">JavaScript</span><span class="tag">GitHub Pages</span>
+        <p style="margin-top:14px;">
+          <a class="btn btn-primary" href="https://github.com/computerscientist254/joseph-thiongo-portfolio" target="_blank" rel="noopener noreferrer">View Source ↗</a>
+        </p>
+      </div>
+
+      <div class="card project-card">
+        <span class="project-label">Concept / Development</span>
+        <h3>ICT Knowledge Hub</h3>
+        <p>
+          A proposed learning platform for ICT knowledge,
+          practical computer skills, tutorials and technical resources.
+        </p>
+        <span class="tag">Education</span><span class="tag">ICT</span>
+        <p style="margin-top:12px;color:var(--gold);">Concept project</p>
+      </div>
+
+      <div class="card project-card">
+        <span class="project-label">Concept / Development</span>
+        <h3>Reliable Perfect ICT Solutions</h3>
+        <p>
+          A digital business platform for ICT services,
+          customer enquiries, technical support and service requests.
+        </p>
+        <span class="tag">Business Technology</span>
+        <span class="tag">Customer Support</span>
+        <p style="margin-top:12px;color:var(--gold);">Business platform – initial version</p>
+      </div>
+
+    </div>
+
+    <div style="text-align:center;margin-top:30px;">
+      <a href="https://github.com/computerscientist254"
+         class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+        Explore My GitHub ↗
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- BUSINESS -->
+
+<section id="business" style="background:#0c142a;">
+  <div class="container">
+
+    <div class="business-banner">
+      <span class="tag">My ICT Business</span>
+      <h3 class="gradient-text">Reliable Perfect ICT Solutions</h3>
+      <p>
+        Practical, reliable and customer-focused ICT solutions.
+        We aim to help individuals, small businesses and organisations
+        solve technology challenges and make better use of digital tools.
+      </p>
+      <a href="#services" class="btn btn-primary">Explore Our Services ↗</a>
+      <a href="#contact" class="btn btn-whatsapp">Request ICT Support</a>
+    </div>
+
+    <div class="section-heading" style="margin-top:65px;">
+      <span class="eyebrow">What We Offer</span>
+      <h2>ICT <span class="gradient-text">Services</span></h2>
+      <p>Choose a service and send a request directly through WhatsApp.</p>
+    </div>
+
+    <div class="services-grid" id="services">
+
+      <div class="card service-card">
+        <div class="service-icon">💻</div>
+        <h3>Computer Repair & Maintenance</h3>
+        <p>Laptop and desktop diagnosis, troubleshooting, hardware replacement and preventive maintenance.</p>
+        <span class="tag">Computer Repair</span>
+        <button class="btn" onclick="chooseService('Computer repair and maintenance')">Request Service ↗</button>
+      </div>
+
+      <div class="card service-card">
+        <div class="service-icon">🪟</div>
+        <h3>Windows & Software Installation</h3>
+        <p>Operating system installation, drivers, application setup, configuration and troubleshooting.</p>
+        <span class="tag">Software Support</span>
+        <button class="btn" onclick="chooseService('Windows and software installation')">Request Service ↗</button>
+      </div>
+
+      <div class="card service-card">
+        <div class="service-icon">🌐</div>
+        <h3>Networking & Wi-Fi</h3>
+        <p>Router configuration, Wi-Fi troubleshooting, LAN setup and basic network support.</p>
+        <span class="tag">Networking</span>
+        <button class="btn" onclick="chooseService('Networking and Wi-Fi')">Request Service ↗</button>
+      </div>
+
+      <div class="card service-card">
+        <div class="service-icon">🖨️</div>
+        <h3>Printer Installation & Repair</h3>
+        <p>Printer configuration, connectivity, installation and printing problem diagnosis.</p>
+        <span class="tag">Printer Support</span>
+        <button class="btn" onclick="chooseService('Printer installation and troubleshooting')">Request Service ↗</button>
+      </div>
+
+      <div class="card service-card">
+        <div class="service-icon">📹</div>
+        <h3>CCTV & Security Systems</h3>
+        <p>Enquiries for CCTV installation, configuration and basic security system support.</p>
+        <span class="tag">CCTV</span>
+        <button class="btn" onclick="chooseService('CCTV and security systems')">Request Service ↗</button>
+      </div>
+
+      <div class="card service-card">
+        <div class="service-icon">🌍</div>
+        <h3>Website Development</h3>
+        <p>Business websites, personal portfolios, landing pages and basic web applications.</p>
+        <span class="tag">Web Development</span>
+        <button class="btn" onclick="chooseService('Website development')">Request Service ↗</button>
+      </div>
+
+      <div class="card service-card">
+        <div class="service-icon">📚</div>
+        <h3>ICT Training & Digital Skills</h3>
+        <p>Computer literacy, Microsoft Office training, internet use and basic digital skills.</p>
+        <span class="tag">ICT Training</span>
+        <button class="btn" onclick="chooseService('ICT training and digital skills')">Request Service ↗</button>
+      </div>
+
+      <div class="card service-card">
+        <div class="service-icon">📄</div>
+        <h3>Document & Cyber Services</h3>
+        <p>Document preparation, formatting, online applications, printing and scanning services.</p>
+        <span class="tag">Digital Services</span>
+        <button class="btn" onclick="chooseService('Document and cyber services')">Request Service ↗</button>
+      </div>
+
+      <div class="card service-card">
+        <div class="service-icon">🛒</div>
+        <h3>ICT Accessories & Equipment</h3>
+        <p>Enquiries for laptops, computer accessories, networking equipment and peripherals.</p>
+        <span class="tag">ICT Products</span>
+        <button class="btn" onclick="chooseService('ICT accessories and equipment')">Request Service ↗</button>
+      </div>
+
+    </div>
+
+    <p class="price-note" style="text-align:center;">
+      Services are subject to assessment, availability and an agreed quotation.
+      No fixed prices are advertised until confirmed.
+    </p>
+  </div>
+</section>
+
+<!-- PROCESS -->
+
+<section id="process">
+  <div class="container">
+    <div class="section-heading">
+      <span class="eyebrow">Customer Experience</span>
+      <h2>How It <span class="gradient-text">Works</span></h2>
+      <p>A simple way to request ICT services and communicate with us.</p>
+    </div>
+
+    <div class="process-grid">
+      <div class="card process-step">
+        <strong>1</strong>
+        <h3>Choose a Service</h3>
+        <p>Select the ICT service you need.</p>
+      </div>
+      <div class="card process-step">
+        <strong>2</strong>
+        <h3>Send an Enquiry</h3>
+        <p>Share your problem and contact information.</p>
+      </div>
+      <div class="card process-step">
+        <strong>3</strong>
+        <h3>Get Assessment</h3>
+        <p>We discuss the issue and the proposed solution.</p>
+      </div>
+      <div class="card process-step">
+        <strong>4</strong>
+        <h3>Agree & Proceed</h3>
+        <p>Confirm the quotation and service arrangements.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact" style="background:#0c142a;">
+  <div class="container">
+    <div class="section-heading">
+      <span class="eyebrow">Let's Talk Technology</span>
+      <h2>Get In <span class="gradient-text">Touch</span></h2>
+      <p>For employment opportunities, professional networking, collaborations or ICT service enquiries.</p>
+    </div>
+
+    <div class="contact-grid">
+
+      <div class="card contact-info">
+        <h3>Contact Information</h3>
+        <p>Reach me through the following channels.</p>
+
+        <a class="contact-link" href="mailto:kangethejosephthiongo@gmail.com">
+          ✉️ Email<br>
+          kangethejosephthiongo@gmail.com
+        </a>
+
+        <a class="contact-link" href="tel:+254717810924">
+          📞 Telephone<br>
+          +254717810924
+        </a>
+
+        <a class="contact-link" href="https://www.linkedin.com/in/joseph-thiongo-9951a827b/" target="_blank" rel="noopener noreferrer">
+          💼 LinkedIn<br>
+          Connect professionally
+        </a>
+
+        <a class="contact-link" href="https://github.com/computerscientist254" target="_blank" rel="noopener noreferrer">
+          💻 GitHub<br>
+          Explore my code
+        </a>
+
+        <a class="contact-link" href="https://wa.me/254717810924" target="_blank" rel="noopener noreferrer">
+          💬 WhatsApp<br>
+          Chat with Reliable Perfect ICT Solutions
+        </a>
+      </div>
+
+      <div class="card">
+        <h3>Send a Message / Request a Service</h3>
+        <p style="color:var(--muted);font-size:.85rem;margin:8px 0 20px;">
+          Complete this form to prepare a WhatsApp message.
+        </p>
+
+        <form id="contactForm">
+
+          <div class="form-row">
+            <label>
+              Your full name
+              <input type="text" id="clientName" placeholder="Enter your name" required>
+            </label>
+
+            <label>
+              Phone number
+              <input type="tel" id="clientPhone" placeholder="+254..." required>
+            </label>
+          </div>
+
+          <label>
+            I am contacting you about
+            <select id="contactType" required>
+              <option value="">Select an option</option>
+              <option>ICT service request</option>
+              <option>Computer repair</option>
+              <option>Website development</option>
+              <option>Networking / Wi-Fi</option>
+              <option>Printer support</option>
+              <option>ICT equipment enquiry</option>
+              <option>Job opportunity</option>
+              <option>Professional collaboration</option>
+              <option>Other enquiry</option>
+            </select>
+          </label>
+
+          <label>
+            Service required
+            <select id="serviceSelect">
+              <option value="">Choose a service (optional)</option>
+              <option>Computer repair and maintenance</option>
+              <option>Windows and software installation</option>
+              <option>Networking and Wi-Fi</option>
+              <option>Printer installation and troubleshooting</option>
+              <option>CCTV and security systems</option>
+              <option>Website development</option>
+              <option>ICT training and digital skills</option>
+              <option>Document and cyber services</option>
+              <option>ICT accessories and equipment</option>
+              <option>Other</option>
+            </select>
+          </label>
+
+          <label>
+            Describe your enquiry
+            <textarea id="clientMessage" placeholder="Tell me how I can help you..." required></textarea>
+          </label>
+
+          <button type="submit" class="btn btn-primary">
+            Send via WhatsApp ↗
+          </button>
+
+          <p style="color:var(--muted);font-size:.75rem;">
+            Your message will open in WhatsApp for you to review and send.
+            This form does not store submissions on a server.
+          </p>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CALL TO ACTION -->
+
+<section>
+  <div class="container business-banner">
+    <span class="tag">Let's Build Something Great</span>
+    <h3>Technology Creates Opportunities.</h3>
+    <p>
+      Whether you are a recruiter, business owner, organisation,
+      student or technology enthusiast, I welcome meaningful
+      professional connections and collaboration.
+    </p>
+    <a href="mailto:kangethejosephthiongo@gmail.com" class="btn btn-primary">Email Joseph</a>
+    <a href="https://wa.me/254717810924" class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer">WhatsApp Us</a>
+  </div>
+</section>
+
 </main>
-<footer><div class="wrap">© <span id="year">2026</span> Joseph Thiongo Kangethe · Professional Portfolio</div></footer>
-</body></html>
+
+<footer>
+  <div class="container">
+    <a href="#home" class="logo">JOSEPH<span>.</span>TK</a>
+    <p>Computer Scientist | ICT Professional | Software Developer</p>
+    <p>Founder – Reliable Perfect ICT Solutions</p>
+    <p>
+      <a href="https://github.com/computerscientist254" target="_blank" rel="noopener noreferrer">GitHub</a> ·
+      <a href="https://www.linkedin.com/in/joseph-thiongo-9951a827b/" target="_blank" rel="noopener noreferrer">LinkedIn</a> ·
+      <a href="mailto:kangethejosephthiongo@gmail.com">Email</a>
+    </p>
+    <p>© <span id="year"></span> Joseph Thiongo Kangethe. All rights reserved.</p>
+    <p>Built with HTML, CSS and JavaScript.</p>
+  </div>
+</footer>
+
+<a class="whatsapp-float"
+   href="https://wa.me/254717810924"
+   target="_blank"
+   rel="noopener noreferrer"
+   aria-label="Chat on WhatsApp">✆</a>
+
+<button class="back-top" id="backTop" aria-label="Back to top">↑</button>
+
+<script>
+// MOBILE NAVIGATION
+const menuToggle = document.getElementById("menuToggle");
+const navLinks = document.getElementById("navLinks");
+
+menuToggle.addEventListener("click", () => {
+  const opened = navLinks.classList.toggle("open");
+  menuToggle.setAttribute("aria-expanded", String(opened));
+  menuToggle.textContent = opened ? "✕" : "☰";
+});
+
+document.querySelectorAll("#navLinks a").forEach(link => {
+  link.addEventListener("click", () => {
+    navLinks.classList.remove("open");
+    menuToggle.setAttribute("aria-expanded", "false");
+    menuToggle.textContent = "☰";
+  });
+});
+
+// AUTOMATIC YEAR
+document.getElementById("year").textContent = new Date().getFullYear();
+
+// WHATSAPP SERVICE REQUEST
+const whatsappNumber = "254717810924";
+
+function chooseService(service) {
+  document.getElementById("serviceSelect").value = service;
+  document.getElementById("contactType").value = "ICT service request";
+  document.getElementById("contact").scrollIntoView({behavior:"smooth"});
+  document.getElementById("clientName").focus({preventScroll:true});
+}
+
+// CONTACT FORM
+document.getElementById("contactForm").addEventListener("submit", function(event) {
+  event.preventDefault();
+
+  const name = document.getElementById("clientName").value.trim();
+  const phone = document.getElementById("clientPhone").value.trim();
+  const type = document.getElementById("contactType").value;
+  const service = document.getElementById("serviceSelect").value;
+  const message = document.getElementById("clientMessage").value.trim();
+
+  if (!name || !phone || !type || !message) {
+    alert("Please complete all required fields.");
+    return;
+  }
+
+  const text =
+`Hello Joseph / Reliable Perfect ICT Solutions,
+
+My name is: ${name}
+My phone number: ${phone}
+Enquiry category: ${type}
+Service requested: ${service || "Not specified"}
+
+My message:
+${message}
+
+I look forward to your response.`;
+
+  const url = "https://wa.me/" + whatsappNumber + "?text=" + encodeURIComponent(text);
+
+  window.open(url, "_blank", "noopener,noreferrer");
+});
+
+// BACK TO TOP
+const backTop = document.getElementById("backTop");
+
+window.addEventListener("scroll", () => {
+  backTop.style.display = window.scrollY > 500 ? "block" : "none";
+});
+
+backTop.addEventListener("click", () => {
+  window.scrollTo({top:0,behavior:"smooth"});
+});
+
+// SCROLL REVEAL
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("visible");
+      observer.unobserve(entry.target);
+    }
+  });
+}, {threshold:0.08});
+
+document.querySelectorAll(".card, .section-heading").forEach(element => {
+  element.classList.add("reveal");
+  observer.observe(element);
+});
+</script>
+
+</body>
+</html>
